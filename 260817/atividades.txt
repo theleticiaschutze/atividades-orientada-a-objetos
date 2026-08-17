@@ -1,0 +1,27 @@
+-- for
+01 -Faça um algoritmo para calcular a média de 3 números. O usuário deve digitar a entrada de dados.
+
+02 - Escrever os números ímpares de 1 a 20.
+
+03 - Um cliente de supermercado fez uma compra de 20 itens. Leia o preço de cada item e calcule o total que a pessoa vai pagar.
+
+-- if
+01 - Crie um algoritmo que leia a nota de um aluno e mostrese ele está aprovado (>= 60), reprovado (< 20), e emrecuperação (< 60).
+
+02 - O imposto de renda de uma pessoa varia segundo umatabela.
+
+Se o salário for menor do que R$ 1.000,00, não há imposto;
+
+Se for entre R$ 1.000,00 e R$ 2.200,00, o imposto é de 13%do valor do salário;
+
+Se for maior do que R$ 2.200,00, o imposto é de 22%;
+
+Faça um algoritmo que dado um valor, em reais, correspondentea um salário, informe o valor que será recebido (total menosimposto).
+
+03 - Faça um algoritmo que leia o IMC (Índice de MassaCorporal) de uma pessoa;
+
+Se o resultado for abaixo de 18,5, informe umamensagem de que a pessoa está abaixo do peso;
+
+Se o resultado for entre 18,5 e 24,99, informe umamensagem de que a pessoa está com peso normal;
+
+Se o resultado for acima de 25, informe umamensagem de que a pessoa está acima do peso.
