@@ -1,5 +1,3 @@
-
-
 package com.tds.ifsc;
 
 import java.util.Scanner;
@@ -7,19 +5,22 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		double totalNotas= 0;
+		double nota, media = 0;
+		int i = 0;
 		Scanner teclado = new Scanner(System.in);
-		Boletim ifsc = new Boletim();
 		
-		for(int i = 0; i < 4; i++) {
+		while(i<4) {
 			System.out.println("Qual a " + (i+1) + " nota?");
-			totalNotas += teclado.nextDouble();
+			nota = teclado.nextDouble();
+			media += nota;
+			i++;
 		}
 		
-		ifsc.calcularMedia(totalNotas);
+		media = media / 4;
+		
+		System.out.println("A média desse bimestre é de " + String.format("%.2f", media) + "!");
+		
 		teclado.close();
-
 	}
 
 }
-
