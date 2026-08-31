@@ -7,9 +7,8 @@ public class TesteFuncionario {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		String fNome, fSobrenome;
-		double fValor;
-		int fHora, fMais;
+		String fNome, fSobrenome, fCpf;
+		double fValor, fHora;
 		
 		
 		System.out.println("Qual o nome do funcionário? ");
@@ -17,23 +16,27 @@ public class TesteFuncionario {
 		
 		System.out.println("Qual o sobrenome do funcionário? ");
 		fSobrenome = teclado.next();
+
+		System.out.println("Qual o CPF do funcionário? ");
+		fCpf = teclado.next();
 		
 		System.out.println("Quantas horas " + fNome +" trabalhou? ");
-		fHora = teclado.nextInt();
+		fHora = teclado.nextDouble();
 		
 		System.out.println("Qual o valor da hora de " + fNome + " ? ");
 		fValor = teclado.nextDouble();
 		
-		Funcionario f1 = new Funcionario(fNome, fSobrenome, fHora, fValor);
+		Funcionario f1 = new Funcionario(fNome, fSobrenome, fCpf, fHora, fValor);
 		
 		f1.nomeCompleto();
 		
 		f1.calcularSalario();
 		
 		System.out.println("Quantas horas " + fNome + " trabalhou a mais? ");
-		fMais = teclado.nextInt();
-		
-		f1.incrementarHoras(fMais);
+		f1.incrementarHoras(teclado.nextDouble());
+
+		System.out.println("Quantas o valor das horas de " + fNome + "? ");
+		f1.alterarValorHora(teclado.nextDouble());
 		
 		f1.calcularSalario();
 		

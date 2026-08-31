@@ -1,13 +1,13 @@
 package com.ifsc.tds;
 
 public class Funcionario {
-	private String nome, sobrenome;
-	private double valorPorHora;
-	private int horasTrabalhadas;
+	private String nome, sobrenome, cpf;
+	private double valorPorHora, horasTrabalhadas;
 	
-	public Funcionario (String fNome, String fSobrenome, int fHora, double fValor) {
+	public Funcionario (String fNome, String fSobrenome, String fCpf, int fHora, double fValor) {
 		this.nome = fNome;
 		this.sobrenome = fSobrenome;
+		this.cpf = fCpf
 		this.valorPorHora = fValor;
 		this.horasTrabalhadas = fHora;
 	}
@@ -21,7 +21,12 @@ public class Funcionario {
 		System.out.println("Salário: R$ " + salario);
 		
 	}
-	public void incrementarHoras(int fMais){
+
+	public void incrementarHoras(double valor){
 		horasTrabalhadas = horasTrabalhadas + fMais;
+	}
+
+	public void alterarValorHora(double valor){
+		this.valorPorHora = valor;
 	}
 }
