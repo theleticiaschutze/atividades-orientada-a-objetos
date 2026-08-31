@@ -1,0 +1,46 @@
+1 – Crie um novo projeto chamado exercicio1. Crie uma classe Pessoa que obedeça a descrição apresentada na representação abaixo.
+- Possua os atributos nome e idade.
+- Possua um método construtor para informar o nome e a idade.
+- E os métodos: dizerONome, dizerAIdade e fazerAniversario.
+- O método dizerONome deve escrever na tela a mensagem: “Olá, meu nome é”, e o valor do atributo nome.
+- O método dizerAIdade deve escrever na tela a mensagem: “Olá, eu tenho X anos”, onde X é o valor do atributo idade.
+- O método fazerAniversario deve adicionar 1 à idade da Pessoa.
+- Crie também uma classe TestePessoa com o método main que realize as seguintes operações:
+  - Instancie um objeto do tipo Pessoa.
+  - Atribua o seu nome ao atributo nome.
+  - Atribua a sua idade ao atributo idade.
+  - Chame o método dizerONome.
+  - Chame o método dizerAIdade.
+  - Chame o método fazerAniversario.
+  - Chame o método dizerAIdade.
+
+2 – Crie um novo projeto chamado exercicio2. Crie uma classe Lampada que obedeça a descrição apresentada na representação abaixo.
+- Possua os atributos acesa e potencia.
+- E os métodos: acender, apagar, informarSituacao e informarPotencia.
+- O método acender deve alterar o atributo acesa para true.
+- O método apagar deve alterar o atributo acesa para false.
+- O método informarSituacao deve informar a mensagem “A luz está acesa” caso o atributo acesa seja igual a true e a mensagem “A luz está apagada” caso o atributo acesa seja igual a false.
+- O método informarPotencia deve escrever a mensagem “A potência da lâmpada é X”, onde X é o valor do atributo potencia.
+- Crie também uma classe TesteLampada que tem um método main que realize as seguintes operações:
+  - Instancie um objeto do tipo Lampada.
+  - Chame o método acender.
+  - Chame o método informarSituacao.
+  - Chame o método apagar.
+  - Chame o método informarSituacao.
+  - Chame o método informarPotencia.
+
+3 – Crie um novo projeto chamado exercicio3. Crie uma classe Funcionario conforme o diagrama a seguir.
+- A classe possui os atributos nome, sobrenome, horasTrabalhadas e valorPorHora.
+- O método nomeCompleto deve escrever na tela o atributo nome concatenado ao atributo sobrenome.
+- O método calcularSalario faz o cálculo de quanto o funcionário irá receber no mês, multiplicando o atributo horasTrabalhadas pelo atributo valorPorHora. Em seguida, escreve o valor na tela.
+- O método incrementarHoras adiciona um valor passado por parâmetro ao valor já existente no atributo horasTrabalhadas.
+- Crie também uma classe TesteFuncionario que tem um método main que realize as seguintes operações:
+  - Atribua o valor “Fulano” ao atributo nome.
+  - Atribua o valor “Ciclano” ao atributo sobrenome.
+  - Atribua o valor 10 ao atributo horasTrabalhadas.
+  - Atribua o valor 25.50 ao atributo valorPorHora.
+  - Chame o método nomeCompleto.
+  - Chame o método calcularSalario.
+  - Adicione 8 ao atributo horasTrabalhadas utilizando o método incrementarHoras.
+  - Chame novamente o método calcularSalario.
+  - Obs: talvez seja necessário criar alguns métodos e ou atributos para terminar o exercício, além dos descritos.
