@@ -2,14 +2,14 @@ package com.ifsc.tds;
 
 public class Animal {
 	private String nome, cor, ambiente;
-	private int patas;
+	private int membros;
 	private double comp, mediaVel;
 	
-	public Animal(String nome, String cor, String ambiente, int patas, double comp, double mediaVel) {
+	public Animal(String nome, String cor, String ambiente, int membros, double comp, double mediaVel) {
 		this.nome = nome;
 		this.cor = cor;
 		this.ambiente = ambiente;
-		this.patas = patas;
+		this.membros = membros;
 		this.comp = comp;
 		this.mediaVel = mediaVel;
 	}
@@ -38,12 +38,12 @@ public class Animal {
 		this.ambiente = ambiente;
 	}
 
-	public int getPatas() {
-		return patas;
+	public int getMembros() {
+		return membros;
 	}
 
-	public void setPatas(int patas) {
-		this.patas = patas;
+	public void setMembros(int membros) {
+		this.membros = membros;
 	}
 
 	public double getComp() {

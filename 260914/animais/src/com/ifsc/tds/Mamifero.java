@@ -3,9 +3,9 @@ package com.ifsc.tds;
 public class Mamifero extends Animal {
 	private String alimento;
 
-	public Mamifero(String nome, String cor, String ambiente, int patas, double comp, double mediaVel,
+	public Mamifero(String nome, String cor, String ambiente, int membros, double comp, double mediaVel,
 			String alimento) {
-		super(nome, ambiente, cor, patas, comp, mediaVel);
+		super(nome, ambiente, cor, membros, comp, mediaVel);
 		this.setAlimento(alimento);
 	}
 
@@ -18,13 +18,13 @@ public class Mamifero extends Animal {
 	}
 	
 	public void dadosMamifero() {
-		System.out.println("Nome.................: " + this.getNome());
-		System.out.println("Cor..................: " + this.getCor());
-		System.out.println("Ambiente.............: " + this.getAmbiente());
-		System.out.println("Quantidade de patas..: " + this.getPatas());
-		System.out.println("Comprimento..........: " + this.getComp());
-		System.out.println("Velocidade média.....: " + this.getMediaVel());
-		System.out.println("Alimento.............: " + this.alimento);
+		System.out.println("Nome...................: " + this.getNome());
+		System.out.println("Cor....................: " + this.getCor());
+		System.out.println("Ambiente...............: " + this.getAmbiente());
+		System.out.println("Quantidade de membros..: " + this.getMembros());
+		System.out.println("Comprimento............: " + this.getComp());
+		System.out.println("Velocidade média.......: " + this.getMediaVel());
+		System.out.println("Alimento...............: " + this.alimento);
 	}
 
 }
