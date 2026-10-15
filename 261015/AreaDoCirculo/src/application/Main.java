@@ -22,7 +22,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			primaryStage.setTitle("Calculando a área de um círculo!");
+			primaryStage.setTitle("Calculando com um círculo!");
 
 			GridPane grid = new GridPane(); // tabela para distribuir os componentes
 			grid.setAlignment(Pos.CENTER);
@@ -33,7 +33,7 @@ public class Main extends Application {
 			Scene scene = new Scene(grid, 500, 250);
 			primaryStage.setScene(scene);
 
-			Text scenetitle = new Text("Calculando área do círculo!");
+			Text scenetitle = new Text("Calculando área e perímetro do círculo!");
 			scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
 			grid.add(scenetitle, 0, 0, 2, 1);
 
@@ -55,12 +55,13 @@ public class Main extends Application {
 
 				@Override
 				public void handle(ActionEvent e) {
-					Double numero1 = Double.parseDouble(txtNum1.getText());
+					Double raio = Double.parseDouble(txtNum1.getText());
 
-					numero1 = (numero1 * numero1) * 3.1415;
+					Double circ = 2 * Math.PI * raio;
+					raio = Math.pow(raio, 2) * Math.PI;
 
 					resultado.setFill(Color.FIREBRICK);
-					resultado.setText("Total: " + numero1);
+					resultado.setText("Área " + String.format("%.2f", raio) + " e perímetro " + String.format("%.2f", circ));
 				}
 			});
 
@@ -81,9 +82,12 @@ public class Main extends Application {
 			caixaBtn.setAlignment(Pos.CENTER);
 			caixaBtn.getChildren().addAll(btnCal, btnClr);
 			grid.add(caixaBtn, 1, 4);
+			
+			primaryStage.show();
 
 		} catch(Exception e) {
 			e.printStackTrace();
+			
 		}
 	}
 	
